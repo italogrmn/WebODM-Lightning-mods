@@ -16,15 +16,15 @@ copy sidebar.html "%PastaAtual%\package"
 
 :: Cria o instalador
 cd %PastaAtual%
-pyinstaller --onefile --icon=%PastaAtual%\enova.ico --add-data="package;package" install.py
+pyinstaller --onefile --add-data="package;package" WebODM_mods.py
 
 :: Move o executável para pasta atual
-move %PastaAtual%\dist\Plugin_Revit.exe %PastaAtual%
+move %PastaAtual%\dist\WebODM_mods.exe %PastaAtual%
 
 :: Limpa o lixo
 rmdir /s /q %PastaAtual%\build
 rmdir /s /q %PastaAtual%\dist
 rmdir /s /q "%PastaAtual%\package"
-del Plugin_Revit.spec
+del WebODM_mods.spec
 
 pause
