@@ -11,7 +11,7 @@ def dispath():
     user_profile = os.environ['USERPROFILE']
 
     #pastas do webodm
-    webodm_path = user_profile + r'\AppData\Local\Programs\WebODM Lightning'
+    webodm_path = r'C:\Users' + "\\" + user_profile + "\\" + r'AppData\Local\Programs\WebODM Lightning'
     projects_path = user_profile + r'\resources\app\apps\WebODM\app\api'
     potree_build_path = user_profile + r'\resources\app\apps\WebODM\build\static\app\js\vendor\potree\build\potree'
     potree_app_path = user_profile + r'\resources\app\apps\WebODM\app\static\app\js\vendor\potree\build\potree'            
